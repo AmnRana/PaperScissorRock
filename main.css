@@ -1,0 +1,18 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    background-color: black;
+}
+.Paper,.Scissor,.Rock{
+    height:10vh;
+    width:10vw;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background:red;
+}

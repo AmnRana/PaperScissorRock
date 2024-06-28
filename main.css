@@ -25,7 +25,7 @@
     align-items: center;
     height:30vh;
     width:35vw;
-    
+    background:green;
    
 }
 .Paper,.Scissor,.Rock{
@@ -51,7 +51,14 @@ justify-content: center;
 align-items: center;
 height:30vh;
 width:35vw;
+background:red;
 
+}
+.ComputerGeneratedSign{
+    height:352px;
+    width:200px;
+    background: blue;
+    background-repeat: no-repeat;
 }
 .Play-Again{
     height:10vh;
@@ -75,3 +82,4 @@ width:35vw;
     color: black;
     cursor:pointer;
 }
+

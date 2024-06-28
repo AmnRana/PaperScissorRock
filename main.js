@@ -7,7 +7,9 @@ let UserInputValue
 let htmlPaper = document.querySelector(".Paper")
 let htmlScissor = document.querySelector(".Scissor")
 let htmlRock = document.querySelector(".Rock")
+let ComputerGeneratedSign =document.querySelector(".ComputerGeneratedSign")
 let ComputerGeneratedNumber;
+
 
 htmlPaper.addEventListener('click',()=>{
     UserInputValue=0
@@ -33,11 +35,17 @@ htmlRock.addEventListener('click',()=>{
     playGame()
 })
 
-
-// let IndexOfUserinput = GameAsseset.indexOf(UserInputValue)
-// console.log(UserInputValue)
-// console.log(ComputerGeneratedNumber)
 function playGame(){
+    // ComputerGeneratedNumber= Math.floor(Math.random()*3)
+    if (ComputerGeneratedNumber==0){
+        ComputerGeneratedSign.style.background="url('./paper.svg')"
+    }else if(ComputerGeneratedNumber==1){
+          ComputerGeneratedSign.style.background="url('./scssior.svg')"
+    }
+    else{
+        ComputerGeneratedSign.style.background="url('./rock.svg')"
+    }
+
     if (UserInputValue == 0){
         if(ComputerGeneratedNumber==1){
             console.log('you loose')
@@ -73,7 +81,6 @@ function playGame(){
         }
     }
     UserInputValue = null
-
 }
 
 

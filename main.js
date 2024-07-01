@@ -14,14 +14,20 @@ let ComputerGeneratedNumber;
 
 htmlPaper.addEventListener('click',()=>{
     UserInputValue=0
+    htmlScissor.classList.remove("Scissor")
+    htmlRock.classList.remove("Rock")
 })
 
 htmlScissor.addEventListener('click',()=>{
     UserInputValue = 1
+    htmlPaper.classList.remove("Paper")
+    htmlRock.classList.remove("Rock")
 })
 
 htmlRock.addEventListener('click',()=>{
     UserInputValue=2
+    htmlPaper.classList.remove("Paper")
+    htmlScissor.classList.remove("Scissor")
 })
 
 StartButton.addEventListener('click', () => playGame())

@@ -29,8 +29,8 @@
     width:27vw;  
 }
 .Paper,.Scissor,.Rock{
-    height:150px;
-    width:150px;
+    height:203px;
+    width:190px;
     background-repeat: no-repeat;
     background-size: cover; 
     margin:2%;
@@ -193,5 +193,51 @@ width:27vw;
     }
 }
 
+@media only screen and (max-width: 768px) {
+  
+  .mid-container{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Play-Again{
+  height:10vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items:start;
+  background: #adff2f;
+  font-size: 45px;
+  color:black;
+  cursor:pointer;
+}
+.start{
+  height:10vh;
+  width:100vw;
+  background: greenyellow;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 45px;
+  color: black;
+  cursor:pointer;
+}
+.displayResult{
+  height:10vh;
+  width:20vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: greenyellow;
+  font-size: 45px;
+  color: black;
+  cursor:pointer;
+}
+
+}
+  
 
 
